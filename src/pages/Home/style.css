@@ -1,0 +1,239 @@
+.container-home {
+    min-height: 100vh;
+    width: 100vw;
+    background: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.homeDegrade {
+    width: 100vw; min-height: 83vh;
+    background: rgba(0, 0, 0, .80);
+    position:absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.linkPost {
+    background: linear-gradient(rgba(221,20,80,1), rgba(230,128,21,1));
+    height: 50px; width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.hHome {
+    min-height: 17vh; width: 100vw;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-home .homeImg {
+    height: 83vh; width: 100vw;
+}
+.generateduBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hHome .titulo-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.hHome .imagem-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.hHome .imagem-home img {
+    width: 70%;
+}
+
+.conteudos-home {
+    background-color: white;
+    min-height: 80vh; width: 100vw;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-home-content {
+    margin: 10px;
+    z-index: 1;
+}
+
+.livros-home {
+    background-color: whitesmoke;
+    min-height: 100vh; width: 100vw;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.quadrado {
+    position: absolute;
+    width: 90vw; height: 60vh;
+    background-color: rgb(158, 158, 158);
+    margin-top: 250px;
+    z-index: 0;
+}
+
+.livros {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin: 10px;
+    box-shadow: 1px 1px 4px black;
+    text-align: center;
+}
+
+.livros img {
+    width: 150px;
+    margin-top: 20px;
+    margin: 10px;
+}
+.livros div {
+    width: 180px;
+}
+
+.lendo-livro {
+    z-index: 2;
+    position: inherit;
+}
+.livros-home .livros-img {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.livros-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.bookImg {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bookImg img {
+    padding: 5px;
+}
+.booksArea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* PODCAST AREA */
+
+.podcasts-home {
+    background-color: azure;
+    min-height: 80vh; width: 100vw;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.podcasts-img {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.podcasts img {
+    width: 200px;
+    margin: 10px;
+}
+.podcast-list {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.podcasts {
+    text-align: center;
+    margin: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 700px) {
+    .homeDegrade {
+        text-align: center;
+    }
+    .homeDegrade h5 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .homeDegrade h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .homeDegrade h6 {
+        font-size: 14px;
+    }
+    .hHome .generateduBox h3 {
+        font-size: 30px;
+    }
+    .hHome .generateduBox h6 {
+        font-size: 15px;
+    }
+    .quadrado {
+        width: 100vw; height: 50vh;
+    }
+    .booksArea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bookImg {
+        display: none;
+    }
+    .livros-img h4 {
+        margin-top: 50px;
+    }
+    .livros-img {
+        text-align: center;
+    }
+    .podcasts-home {
+        text-align: center;
+    }
+}
